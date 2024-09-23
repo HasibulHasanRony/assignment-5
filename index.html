@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate Bangladesh</title>
+    <!-- google font 'Lexend' -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- Link: Fontawesome CDN -->
+    <script src="https://kit.fontawesome.com/f811dd765f.js" crossorigin="anonymous"></script>
+
+    <!-- tailwind and daisyui setup -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        nav_footer_color: '#F9F7F3',
+                        btn_color: '#B4F461',
+                        badge_bg_color: '#1111110D',
+                        text_dim_color: '#111111B3',
+                    },
+                    fontFamily: {
+                        lexendFont: 'Lexend'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="font-lexendFont">
+    <header class="bg-orange-100 mb-28">
+        <nav class="flex container items-center justify-between text-center text-2xl font-semibold mx-auto py-10 ">
+            <div>
+                <button class="py-3 px-6 rounded-xl bg-[#B4F461]">Blog</button>
+            </div>
+            <div class="flex text-center items-center font-semibold gap-5">
+                <img src="assets/logo.png" alt="">
+                <h3>Donate Bangladesh</h3>
+            </div>
+            <div class="flex text-center items-center font-medium gap-5">
+                <img src="assets/coin.png" alt="">
+                <h3><span>5500</span> BDT</h3>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- donation section -->
+        <section class="w-10/12 mx-auto">
+            <!-- option button -->
+            <div class="flex gap-3 justify-center my-10">
+                <div>
+                    <button class="py-3 px-6 rounded-xl bg-[#B4F461]">Donation</button>
+                </div>
+                <div>
+                    <button class="py-3 px-6 rounded-xl bg-[#B4F461]">History</button>
+                </div>
+            </div>
+            <!-- donate spot option -->
+            <div class="">
+                <!-- Donate for Flood at Noakhali, Bangladesh -->
+                <div class="border-2 rounded-lg mb-10">
+                    <div class="flex gap-8 p-4">
+                        <div><img src="assets/noakhali.png" alt=""></div>
+                        <div class="flex-col justify-between">
+                            <h3 class="font-bold text-xl">Donate for Flood at Noakhali, Bangladesh</h3>
+                            <p class="text-[#111111B3]/[0.6] mb-6">A lot of people are effected there. They don'nt have
+                                foods to eat. They need your help.</p>
+                            <div>
+                                <label class="form-control w-full max-w-xs">
+                                    <div class="label">
+                                        <span class="label-text font-bold">Add amaount what you want to donate...</span>
+                                    </div>
+                                    <input type="text" placeholder="Type here"
+                                        class="input input-bordered w-full max-w-xs" />
+                                </label>
+                            </div>
+
+                            <div class="mt-6">
+                                <button class="py-3 w-full rounded-xl bg-[#B4F461]">Donate</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Donate for Flood at Feni, Bangladesh -->
+                <div class="border-2 rounded-lg mb-10">
+                    <div class="flex gap-8 p-4">
+                        <div><img src="assets/feni.png" alt=""></div>
+                        <div class="flex-col justify-between">
+                            <h3 class="font-bold text-xl">Donate for Flood at Feni, Bangladesh</h3>
+                            <p class="text-[#111111B3]/[0.6] mb-6">A lot of people are effected there. They don'nt have
+                                foods to eat. They need your help.</p>
+                            <div>
+                                <label class="form-control w-full max-w-xs">
+                                    <div class="label">
+                                        <span class="label-text font-bold">Add amaount what you want to donate...</span>
+                                    </div>
+                                    <input type="text" placeholder="Type here"
+                                        class="input input-bordered w-full max-w-xs" />
+                                </label>
+                            </div>
+
+                            <div class="mt-6">
+                                <button class="py-3 w-full rounded-xl bg-[#B4F461]">Donate</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Donate for martyrs, Bangladesh -->
+                <div class="border-2 rounded-lg mb-10">
+                    <div class="flex gap-8 p-4">
+                        <div><img src="assets/quota-protest.png" alt=""></div>
+                        <div class="flex-col justify-between">
+                            <h3 class="font-bold text-xl">Donate for Flood at Noakhali, Bangladesh</h3>
+                            <p class="text-[#111111B3]/[0.6] mb-6">A lot of people are effected there. They are the
+                                national heros. They need your help.</p>
+                            <div>
+                                <label class="form-control w-full max-w-xs">
+                                    <div class="label">
+                                        <span class="label-text font-bold">Add amaount what you want to donate...</span>
+                                    </div>
+                                    <input type="text" placeholder="Type here"
+                                        class="input input-bordered w-full max-w-xs" />
+                                </label>
+                            </div>
+
+                            <div class="mt-6">
+                                <button class="py-3 w-full rounded-xl bg-[#B4F461]">Donate</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-orange-100 mt-16">
+        <div class="p-16"></div>
+    </footer>
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>
