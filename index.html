@@ -39,9 +39,9 @@
 
 <body class="font-lexendFont">
     <header class="bg-orange-100 mb-28">
-        <nav class="flex container items-center justify-between text-center text-2xl font-semibold mx-auto py-10 ">
+        <nav class="flex container items-center justify-between text-center text-2xl font-semibold mx-auto py-10">
             <div>
-                <button class="py-3 px-6 rounded-xl bg-[#B4F461]">Blog</button>
+                <button id="blog_btn" class="py-3 px-6 rounded-xl bg-[#B4F461]">Blog</button>
             </div>
             <div class="flex text-center items-center font-semibold gap-5">
                 <img src="assets/logo.png" alt="">
@@ -49,29 +49,34 @@
             </div>
             <div class="flex text-center items-center font-medium gap-5">
                 <img src="assets/coin.png" alt="">
-                <h3><span>5500</span> BDT</h3>
+                <h3><span id="total_amaount">5500</span> BDT</h3>
             </div>
         </nav>
+        <!-- option button -->
+        <div class="flex gap-3 justify-center my-10">
+            <div>
+                <button id="donation_btn" class="py-3 px-6 rounded-xl bg-[#B4F461]">Donation</button>
+            </div>
+            <div>
+                <button id="history_btn" class="py-3 px-6 rounded-xl bg-[#B4F461]">History</button>
+            </div>
+        </div>
     </header>
     <main>
         <!-- donation section -->
-        <section class="w-10/12 mx-auto">
-            <!-- option button -->
-            <div class="flex gap-3 justify-center my-10">
-                <div>
-                    <button class="py-3 px-6 rounded-xl bg-[#B4F461]">Donation</button>
-                </div>
-                <div>
-                    <button class="py-3 px-6 rounded-xl bg-[#B4F461]">History</button>
-                </div>
-            </div>
+        <section id="total_section" class="w-10/12 mx-auto">
             <!-- donate spot option -->
             <div class="">
                 <!-- Donate for Flood at Noakhali, Bangladesh -->
                 <div class="border-2 rounded-lg mb-10">
-                    <div class="flex gap-8 p-4">
+                    <div class="flex  gap-8 p-4">
                         <div><img src="assets/noakhali.png" alt=""></div>
                         <div class="flex-col justify-between">
+                            <!-- donate amaount -->
+                            <div class="flex text-center items-center font-medium gap-2">
+                                <img src="assets/coin.png" alt="">
+                                <h3><span id="donate_noakhali">2500</span> BDT</h3>
+                            </div>
                             <h3 class="font-bold text-xl">Donate for Flood at Noakhali, Bangladesh</h3>
                             <p class="text-[#111111B3]/[0.6] mb-6">A lot of people are effected there. They don'nt have
                                 foods to eat. They need your help.</p>
@@ -80,13 +85,13 @@
                                     <div class="label">
                                         <span class="label-text font-bold">Add amaount what you want to donate...</span>
                                     </div>
-                                    <input type="text" placeholder="Type here"
+                                    <input id="input_noakhali" type="text" placeholder="Type here"
                                         class="input input-bordered w-full max-w-xs" />
                                 </label>
                             </div>
 
                             <div class="mt-6">
-                                <button class="py-3 w-full rounded-xl bg-[#B4F461]">Donate</button>
+                                <button id="donation-1" class="py-3 w-full rounded-xl bg-[#B4F461]">Donate</button>
                             </div>
                         </div>
                     </div>
@@ -96,6 +101,11 @@
                     <div class="flex gap-8 p-4">
                         <div><img src="assets/feni.png" alt=""></div>
                         <div class="flex-col justify-between">
+                            <!-- donate amaount -->
+                            <div class="flex text-center items-center font-medium gap-2 mb-2">
+                                <img src="assets/coin.png" alt="">
+                                <h3><span id="donate_feni">2500</span> BDT</h3>
+                            </div>
                             <h3 class="font-bold text-xl">Donate for Flood at Feni, Bangladesh</h3>
                             <p class="text-[#111111B3]/[0.6] mb-6">A lot of people are effected there. They don'nt have
                                 foods to eat. They need your help.</p>
@@ -104,13 +114,13 @@
                                     <div class="label">
                                         <span class="label-text font-bold">Add amaount what you want to donate...</span>
                                     </div>
-                                    <input type="text" placeholder="Type here"
+                                    <input id="input_feni" type="text" placeholder="Type here"
                                         class="input input-bordered w-full max-w-xs" />
                                 </label>
                             </div>
 
                             <div class="mt-6">
-                                <button class="py-3 w-full rounded-xl bg-[#B4F461]">Donate</button>
+                                <button id="donation-2" class="py-3 w-full rounded-xl bg-[#B4F461]">Donate</button>
                             </div>
                         </div>
                     </div>
@@ -120,7 +130,12 @@
                     <div class="flex gap-8 p-4">
                         <div><img src="assets/quota-protest.png" alt=""></div>
                         <div class="flex-col justify-between">
-                            <h3 class="font-bold text-xl">Donate for Flood at Noakhali, Bangladesh</h3>
+                            <!-- donate amaount -->
+                            <div class="flex text-center items-center font-medium gap-2 mb-2">
+                                <img src="assets/coin.png" alt="">
+                                <h3><span id="donate_for_heros">2500</span> BDT</h3>
+                            </div>
+                            <h3 class="font-bold text-xl">Donate for the national heros, Bangladesh</h3>
                             <p class="text-[#111111B3]/[0.6] mb-6">A lot of people are effected there. They are the
                                 national heros. They need your help.</p>
                             <div>
@@ -128,18 +143,25 @@
                                     <div class="label">
                                         <span class="label-text font-bold">Add amaount what you want to donate...</span>
                                     </div>
-                                    <input type="text" placeholder="Type here"
+                                    <input id="input_for_heros" type="text" placeholder="Type here"
                                         class="input input-bordered w-full max-w-xs" />
                                 </label>
                             </div>
 
                             <div class="mt-6">
-                                <button class="py-3 w-full rounded-xl bg-[#B4F461]">Donate</button>
+                                <button id="donation-3" class="py-3 w-full rounded-xl bg-[#B4F461]">Donate</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </section>
+
+        <section id="history-section" class="container mx-auto hidden">
+            <div id="history-section1" class="shadow my-4 p-4"></div>
+            <div id="history-section2" class="shadow my-4 p-4"></div>
+            <div id="history-section3" class="shadow my-4 p-4"></div>
+            
         </section>
     </main>
     <footer class="bg-orange-100 mt-16">
