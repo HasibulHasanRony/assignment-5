@@ -55,11 +55,16 @@ donation2Btn.addEventListener("click", function () {
     const totalAmaount = parseFloat(document.getElementById('total_amaount').innerText);
     const donateFeni = parseFloat(document.getElementById('donate_feni').innerText);
     const inputFeni = parseFloat(document.getElementById('input_feni').value);
+    let historySection2 = document.getElementById('history-section2');
     if (!isNaN(inputFeni) && inputFeni > 0 && inputFeni < totalAmaount) {
         let finalAmaount = totalAmaount - inputFeni;
         let totalDonation = donateFeni + inputFeni;
         document.getElementById('donate_feni').innerText = totalDonation.toFixed(2);
         document.getElementById('total_amaount').innerText = finalAmaount.toFixed(2);
+        historySection2.innerHTML = `
+        <p>${inputFeni} Taka is Donated for Donate for fload at Feni, Bangladesh. </p>
+        <p>date: ${new Date()}</p>
+        `
         alert("You have donated successfully! thanks!");
     }
     else {
@@ -71,11 +76,16 @@ donation3Btn.addEventListener("click", function () {
     const totalAmaount = parseFloat(document.getElementById('total_amaount').innerText);
     const donateForHeros = parseFloat(document.getElementById('donate_for_heros').innerText);
     const inputForHeros = parseFloat(document.getElementById('input_for_heros').value);
+    let historySection3 = document.getElementById('history-section3');
     if (!isNaN(inputForHeros) && inputForHeros > 0 && inputForHeros < totalAmaount) {
         let finalAmaount = totalAmaount - inputForHeros;
         let totalDonation = donateForHeros + inputForHeros;
         document.getElementById('donate_for_heros').innerText = totalDonation.toFixed(2);
         document.getElementById('total_amaount').innerText = finalAmaount.toFixed(2);
+        historySection3.innerHTML = `
+        <p>${inputForHeros} Taka is Donated for Donate for National Heros, Bangladesh. </p>
+        <p>date: ${new Date()}</p>
+        `
         alert("You have donated successfully! thanks!");
     }
     else {
